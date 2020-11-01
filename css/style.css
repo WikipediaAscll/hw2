@@ -1,0 +1,150 @@
+@charset "utf-8";
+/*匯入其他字體*/
+/*@font-face {
+  font-family: ApivitaAsty;
+  src: url(../font/ApivitaAsty-Medium.woff);
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	box-sizing:border-box;
+/*	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;*/
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*,*:before,*:after{
+	box-sizing:border-box;
+ }
+img{
+	max-width: 100%;
+	height: auto;
+} 
+
+body {
+	line-height: 1;
+	outline:none;
+	/*google思源字體*/
+	font-family: 'Roboto';
+	/*google思源宋體*/
+	/*font-family: 'Noto Serif CJK';*/
+}
+ol, ul {
+	list-style: none;
+	
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*img {width:100%;height:auto;}*/
+a {color:black;
+	text-decoration: none;
+	}
+button{background-color: transparent;border: 0px;cursor: pointer;}
+img{
+	max-width: 100%;
+	height: auto;
+}
+/*開始css*/
+.wrap{}
+a:hover{opacity: 0.5;transition: all 0.3s;}
+/* 通用css */
+.d-flex{display: flex;}
+.justify-content-center{justify-content: center;}
+.justify-content-between{justify-content: space-between;}
+.flex-wrap{flex-wrap: wrap;}
+.align-items{align-items: center;}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.dark-bg{background-color: #000;}
+
+.fz-80{font-size: 5em;}
+.fz-64{font-size: 4em;}
+.fz-24{font-size: 1.5em;}
+.fz-20{font-size: 1.25em;}
+.fw-500{font-weight: 500;}
+.fw-700{font-weight: 700;}
+.fw-900{font-weight: 900;}
+
+.line-h36{line-height: 1.5;}
+.line-h42{line-height: 1.75;}
+.line-h94{line-height: 1.175;}
+/* .fs-o{font-style: oblique;} */
+
+.color-w{color: #fff;}
+.color-w a{color: #fff;}
+.text-center{text-align: center;}
+
+.d-inline-block{display: inline-block;}
+
+.list-style li{padding-left:38px;}
+.list-style li:before{
+	content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    background-color: #891818;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+.m0-auto{margin: 0 auto;}
+.mb-16{margin-bottom: 16px;}
+.mb-35{margin-bottom: 35px;}
+.mb-32{margin-bottom: 32px;}
+.mb-40{margin-bottom: 40px;}
+.mb-56{margin-bottom: 56px;}
+.mb-64{margin-bottom: 64px;}
+
+
+
+/* 個別css */
+.kv{
+	background: url('../images/kv-bg.png') no-repeat center center;
+	height: 958px;
+}
+.kv ul{margin-top: 48px;}
+
+.about{padding: 64px 0px 56px;}
+.about img{margin-top: 40px;margin-bottom: 24px;}
+
+.my_brand{padding:64px 0px 160px;}
+
+.other_works{padding:64px 0px 160px;}
+
+.footer{padding:64px 0px 80px;}
+/*手機板變PC版*/
+@media screen and (min-width:1200px){}
+/*PC變成手機板*/
+@media screen and (max-width:375px){}
